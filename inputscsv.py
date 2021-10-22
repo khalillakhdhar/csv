@@ -7,7 +7,7 @@ for i in range(1):
     fonction=input("fonction=?")
     row=[prenom,nom,fonction]
     rows.append(row) #ajouter une ligne au tableau
-with open('users.csv', 'w') as f:  #créer et écrire dans le CSV
+with open('users.csv', 'w') as f:  #créer et écrire dans le CSV (filepath)
     write = csv.writer(f) #pointer sur le ficher (créer le fichier)
     write.writerow(header) 
     write.writerows(rows) 
